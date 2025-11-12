@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- Simple landing page after successful JS-validated submit -->
+<!-- Simple landing page after successful submit -->
 <html lang="en">
 <head>
   <meta charset="utf-8" />
@@ -16,7 +16,10 @@
         </td>
         <td align="center"><h2>SouthCentral Clinic</h2></td>
         <td valign="top" align="right" width="20%">
-          <div id="todayBox"><span id="todayLine1"></span><br><span id="todayLine2"></span></div>
+          <div id="todayBox">
+            <span id="todayLine1"></span><br>
+            <span id="todayLine2"></span>
+          </div>
         </td>
       </tr>
     </table>
@@ -24,7 +27,7 @@
 
   <main style="text-align:center; padding: 60px 20px;">
     <div style="max-width: 600px; margin: 0 auto; background: #fff; padding: 40px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-      <h3 style="color: #166534; margin-bottom: 18px;">Thank you for your submission!</h3>
+      <h3 style="color: #166534; margin-bottom: 18px;">Thank you for your submission.</h3>
       <p>We will be contacting you shortly.</p>
       <p><a href="homework3.html" class="footer-btn">Back to Registration Form</a></p>
     </div>
@@ -44,21 +47,6 @@
     </div>
   </div>
 
-  <script>
-    // tiny header date from main script, duplicated to keep this page standalone
-    (function () {
-      try {
-        const d = new Date();
-        const mm = String(d.getMonth() + 1).padStart(2, '0');
-        const dd = String(d.getDate()).padStart(2, '0');
-        const yyyy = d.getFullYear();
-        const l1 = document.getElementById("todayLine1");
-        const l2 = document.getElementById("todayLine2");
-        if (l1) l1.textContent = `Today's date: ${mm}/${dd}/${yyyy}`;
-        if (l2) l2.textContent = "";
-      } catch (e) {}
-    })();
-  </script>
+  <script src="Script1.js"></script>
 </body>
 </html>
-
