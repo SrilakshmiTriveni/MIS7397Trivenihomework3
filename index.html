@@ -126,7 +126,7 @@ Description: Registration form for a clinic patient portal (Homework 3).
           <td><label for="phone"><span class="req">*</span> Phone Number:</label></td>
           <td colspan="5">
             <input type="text" id="phone" name="phone" required
-                   pattern="^\d{5}$"
+                   pattern="^[0-9]{3}-[0-9]{3}-[0-9]{4}$"
                    title="Phone must be in format 000-000-0000 (10 digits with dashes)"
                    placeholder="000-000-0000" />
             <span class="form-error" id="phoneErr"></span>
