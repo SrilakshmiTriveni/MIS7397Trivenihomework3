@@ -686,7 +686,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const prettyPhone = (raw) => {
     const d = (raw || "").replace(/\D/g, "");
     if (d.length !== 10) return raw || "(not provided)";
-    return `(${d.slice(0, 3)}) ${d.slice(3, 6)}-${d.slice(6)}`;
+    return `(${d.slice(0, 3)}) -${d.slice(3, 6)}-${d.slice(6)}`;
   };
   const yn = (b) => (b ? "Y" : "N");
 
