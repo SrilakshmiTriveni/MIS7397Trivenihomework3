@@ -2,7 +2,7 @@
 Program name: Script1.js
 Author: Bolla Srilakshmi Triveni
 Date created: 10-20-2025
-Date last edited: 10-24-2025
+Date last edited: 11-02-2025
 Version: 2.7
 Description: Full JS validation and review for homework3.html:
 - Header date
